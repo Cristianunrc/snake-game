@@ -1,0 +1,19 @@
+body {
+  background-image: url('./img/snakeBackground.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#gameBoard {
+  border: 3px solid;
+}
+
+.custom-score {
+  font-family: 'Honk-regular';
+  font-size: 45px;
+}
+
+@font-face {
+  font-family: 'Honk-Regular';
+  src: url('./font/Honk-Regular.ttf');
+}

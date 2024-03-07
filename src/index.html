@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  
+  <!-- Bootswatch -->
+  <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8a2a68e2d5.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icon -->
+  <link rel="icon" type="image/x-icon" href="./img/snake.ico">
+</head>
+<body>
+  <div id="gameContainer" class="container flex justify-content-center text-center mt-3">
+    <canvas id="gameBoard" width="500" height="450"></canvas>
+    <div id="scoreText" class="custom-score">
+      0
+    </div>
+    <div class="text-center mt-1">
+      <button id="resetBtn" class="btn btn-danger me-2">
+        <i class="fa-solid fa-arrow-rotate-left me-2"></i>
+        Reset
+      </button>
+      <button id="playBtn" class="btn btn-success me-2">
+        <i class="fa-solid fa-play me-2"></i>
+        Play
+      </button>
+      <button id="pauseBtn" class="btn btn-warning">
+        <i class="fa-regular fa-circle-pause me-2"></i>
+        Pause
+      </button>
+    </div>
+  </div>
+  
+  <!-- Sounds -->
+  <audio id="eatSound" src="./sound/eating0.wav" style="display: none;"></audio>
+  <audio id="loseSound" src="./sound/loseGame0.wav" style="display: none;"></audio>
+  <audio id="playSound" src="./sound/playSound.mp3" style="display: none;"></audio>
+  <audio id="pauseSound" src="./sound/pauseSound.mp3" style="display: none;"></audio>
+
+  <script src="index.js"></script>
+</body>
+</html>
